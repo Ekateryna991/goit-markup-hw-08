@@ -6,11 +6,6 @@
 
 .section {
   @extend %section-size;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .team-photo {
@@ -27,10 +22,18 @@
   @extend %team-text;
 }
 
+.list {
+  @extend %list;
+}
+
 .team-person {
   @media (min-width: 768px) {
     display: flex;
   }
+}
+
+.person-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .social-icon {
@@ -77,3 +80,7 @@
     margin-left: 32px;
   }
 }
+
+// .contact {
+// margin-left: auto;
+// }

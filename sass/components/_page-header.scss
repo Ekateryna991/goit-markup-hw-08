@@ -1,4 +1,4 @@
-@import '../utils/placeholder';
+// @import '../utils/placeholder';
 
 .main {
   position: relative;
@@ -6,6 +6,11 @@
   align-items: center;
 
   border-bottom: 1px solid #ececec;
+}
+
+.main.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .menu-button {
@@ -17,6 +22,8 @@
   background-color: transparent;
   width: 40px;
   height: 40px;
+  align-items: center;
+  justify-content: center;
 
   & .icon-menu {
     display: none;
@@ -55,11 +62,6 @@
 .site-nav,
 .contact {
   @extend %text-header;
-
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.14;
-  }
 }
 
 .link-nav {
@@ -67,12 +69,12 @@
   position: relative;
 
   display: inline-block;
-  //   padding-top: 40px;
-  //   padding-bottom: 40px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   transition: color 250ms $timing-function;
 
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width:1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -131,42 +133,17 @@
   }
 }
 
-.link-nav.current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $primary-accent-color;
-}
-
 .site-nav {
-  & .item:not(:last-child) {
-    padding-bottom: 40px;
-  }
-
-  & .item:first-child {
-    padding-bottom: 52px;
-  }
-
-  // & .item + .item {
-  // padding-bottom: 40px;
-  //   }
-
-  & .item:last-child {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+
+    .item:not(:first-child) {
+      padding-top: 40px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
-
-    .item:last-child {
-      margin-right: 0;
-    }
 
     .item + .item {
       margin-left: 50px;
@@ -184,20 +161,32 @@
   .link-nav.current {
     color: $primary-accent-color;
   }
+
+  .item:last-child {
+    margin-right: 0;
+  }
 }
 
 .site-nav.list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: 85px;
   }
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .contact {
-  .item + .item {
-    margin-top: 16px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    .item + .item {
+      margin-top: 16px;
+    }
   }
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
 
@@ -207,7 +196,15 @@
   }
 }
 
-.main {
-  padding-bottom: 16px;
-  padding-top: 16px;
+.link-nav.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $primary-accent-color;
 }

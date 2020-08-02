@@ -8,10 +8,10 @@
   letter-spacing: 0.03em;
 }
 
-a {
-  text-decoration: unset;
-}
-
 .list {
   @extend %list;
+}
+
+a {
+  text-decoration: unset;
 }
