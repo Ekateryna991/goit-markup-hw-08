@@ -32,6 +32,10 @@
   }
 }
 
+.person-item {
+  width: 100vw;
+}
+
 .person-item:not(:first-child) {
   margin-left: 30px;
 }

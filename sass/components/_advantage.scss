@@ -19,13 +19,17 @@
 
 .section-subtitle {
   @extend %section-subtitle;
-
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
-// .advantage-item {
-// display: flex;
-// }
+.advantage-item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .advantages {
   @media screen and (max-width: 767px) {
@@ -33,6 +37,20 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
 
@@ -54,6 +72,10 @@
   margin-bottom: 30px;
 
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
