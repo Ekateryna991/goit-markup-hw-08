@@ -9,8 +9,10 @@
 }
 
 .main.container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .menu-button {
@@ -26,6 +28,10 @@
   justify-content: center;
 
   & .icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -44,18 +50,32 @@
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // width: 100%;
 
-  padding: 60px;
+  // padding: 60px;
   text-align: center;
   font-size: 18px;
   background-color: tomato;
 
   &.is-open {
     display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    padding: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // padding: 32px 0 32px 0;
   }
 }
 
@@ -74,7 +94,7 @@
 
   transition: color 250ms $timing-function;
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -99,6 +119,15 @@
     fill: $primary-accent-color;
   }
 }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+// padding-top: 21px;
+// padding-bottom: 21px;
+
+// .item + .item {
+// margin-top: 10px;
+// }
+// }
 
 .email-icon {
   display: block;
