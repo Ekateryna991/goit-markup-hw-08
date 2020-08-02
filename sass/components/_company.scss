@@ -1,0 +1,88 @@
+.company {
+  background-position: center;
+  width: 480px;
+  height: 400px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/header-img-480.jpg);
+  background-size: 480px 400px;
+
+  //   background-image: linear-gradient(
+  //   rgba(47, 48, 58, 0.8),
+  //   rgba(47, 48, 58, 0.8)
+  // ),
+  // url(../img/header-img.jpg);
+
+  //   max-width: 1600px;
+  @extend %margin-auto;
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../img/header-img.jpg);
+    max-width: 1600px;
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .company {
+// background-image: linear-gradient(
+// rgba(47, 48, 58, 0.8),
+// rgba(47, 48, 58, 0.8)
+//   ),
+//   url(../img/header-img-480-2x.jpg);
+// background-size: 480px 400px;
+//   }
+// }
+
+.container {
+  @extend %container;
+}
+
+.company {
+  text-align: center;
+}
+
+.company-item {
+  height: 400px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.company-title {
+  color: $primary-bg-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 118px;
+
+  width: 360px;
+  font-family: Roboto;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.button {
+  @extend %button;
+}
