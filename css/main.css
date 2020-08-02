@@ -1181,15 +1181,31 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-.person-item {
-  width: 100vw;
+@media screen and (max-width: 767px) {
+  .person-item {
+    width: 100vw;
+  }
 }
 
-.person-item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .person-item {
+    width: 354px;
+    margin-bottom: 30px;
+  }
+  .person-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .person-item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .icon-social-link {
