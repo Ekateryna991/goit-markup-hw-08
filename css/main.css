@@ -3,9 +3,19 @@
 /* вторичный цвет текста #757575 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .company-title, .company {
   margin-left: auto;
   margin-right: auto;
+}
+
+.advantage {
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 .list {
@@ -44,6 +54,61 @@
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-title {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -339,9 +404,19 @@ a {
   width: 696px;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .company-title, .company {
   margin-left: auto;
   margin-right: auto;
+}
+
+.advantage {
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 .list {
@@ -380,6 +455,61 @@ a {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-title {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main {
@@ -600,9 +730,19 @@ a {
   padding-top: 16px;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .company-title, .company {
   margin-left: auto;
   margin-right: auto;
+}
+
+.advantage {
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 .list {
@@ -641,6 +781,61 @@ a {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-title {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo {
@@ -710,5 +905,341 @@ a {
     font-size: 44px;
     line-height: 1.36;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.company-title, .company {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: inherit;
+  border-radius: 4px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.site-nav,
+.contact {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-title {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.advantages {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.advantages:last-child {
+  margin-bottom: 0px;
+}
+
+.advantages-card {
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 100%;
+  padding: 25px 190px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-card {
+    padding: 25px 142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-card {
+    padding: 25px 100px;
+  }
+}
+
+.advantage-info {
+  height: 226px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-info {
+    height: 251px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutus {
+    display: none;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.company-title, .company {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: inherit;
+  border-radius: 4px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.site-nav,
+.contact {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-title {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team-photo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .team-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.icon-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  -webkit-transition-property: background-color fill;
+  transition-property: background-color fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-social-link:hover {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.icon-social-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-link-list {
+  margin-right: 10px;
+  padding-bottom: 24px;
+}
+
+.social-link-list:last-child {
+  margin-right: 32;
+}
+
+.social-link-list:first-child {
+  margin-left: 32px;
 }
 /*# sourceMappingURL=main.css.map */
