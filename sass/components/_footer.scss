@@ -14,6 +14,11 @@ footer {
     display: flex;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   // align-items: baseline;
   align-items: center;
   justify-content: center;
@@ -23,6 +28,10 @@ footer {
 }
 
 .footer-address {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 69px;
   }
@@ -53,6 +62,10 @@ footer {
 .subscription {
   @media screen and(max-width:767px) {
     margin-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 89px;
   }
 
   @media screen and(min-width:1200px) {
@@ -103,7 +116,7 @@ footer {
 }
 
 .mailing {
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:1199px) {
     margin-top: 60px;
   }
 }
