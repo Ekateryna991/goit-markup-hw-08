@@ -3,7 +3,7 @@
 /* вторичный цвет текста #757575 */
 /* белый #FFFFFF */
 /* акцент #2196F3 */
-.section {
+.section, .customers {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -673,7 +673,7 @@ a {
   background-color: #2196f3;
 }
 
-.section {
+.section, .customers {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -805,7 +805,7 @@ a {
   color: #2196f3;
 }
 
-.section {
+.section, .customers {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1051,7 +1051,7 @@ a {
   display: block;
 }
 
-.section {
+.section, .customers {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1267,8 +1267,25 @@ a {
           justify-content: space-between;
 }
 
-.customers-list .item:not(:last-child) {
-  margin-right: 30px;
+.customers-list .item {
+  margin-bottom: 30px;
+}
+
+.customers-list .item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .customers-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .customers-link {
@@ -1277,9 +1294,11 @@ a {
   height: 90px;
 }
 
-.customers {
-  padding-bottom: 94px;
-  padding-top: 94px;
+@media screen and (min-width: 1199px) {
+  .customers {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .button-customers {

@@ -15,8 +15,21 @@
   align-items: center;
   justify-content: space-between;
 
-  .item:not(:last-child) {
-    margin-right: 30px;
+  .item {
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -27,8 +40,12 @@
 }
 
 .customers {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @extend %section-size;
+
+  @media screen and (min-width: 1199px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .button-customers {
