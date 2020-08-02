@@ -61,7 +61,7 @@
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -436,13 +436,21 @@ a {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
+  width: 360px;
   font-family: Roboto;
+  font-size: 26px;
+  line-height: 1.62;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .company-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .main {
@@ -802,7 +810,7 @@ a {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -934,7 +942,7 @@ a {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1180,7 +1188,7 @@ a {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1263,6 +1271,14 @@ a {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .person-item .social-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .person-item {
     width: 354px;
@@ -1324,6 +1340,12 @@ a {
 
 .social-link-list:first-child {
   margin-left: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .customers-list {
