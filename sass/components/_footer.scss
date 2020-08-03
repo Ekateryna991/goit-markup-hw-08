@@ -66,6 +66,7 @@ footer {
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-right: 89px;
+    height: 130px;
   }
 
   @media screen and(min-width:1200px) {
@@ -118,6 +119,10 @@ footer {
 .mailing {
   @media screen and(max-width:1199px) {
     margin-top: 60px;
+  }
+
+  @media screen and(min-width:768) and(max-width:1199px) {
+    margin-left: 166px;
   }
 }
 
