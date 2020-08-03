@@ -1566,14 +1566,39 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 34px;
 }
 
-.nav-portfolio .item + .item {
-  margin-left: 8px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-portfolio {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-bottom: 40px;
+  }
+  .nav-portfolio .item:last-child {
+    margin-right: 0;
+  }
+  .nav-portfolio .item {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
+  .nav-portfolio .item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 34px;
+  }
+  .nav-portfolio .item + .item {
+    margin-left: 8px;
+  }
 }
 
 .portfolio-item {
@@ -1684,6 +1709,9 @@ a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .works-image {
@@ -1798,12 +1826,6 @@ footer {
 }
 
 .footer-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1930,20 +1952,24 @@ footer {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .mailing {
-    margin-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768) and (max-width: 1199px) {
+@media screen and (min-width: 768) {
   .mailing {
     margin-left: 166px;
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .mailing {
+    margin-top: 60px;
+  }
+  .mailing .footer-action {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .input-footer {
-  width: 358px;
   height: 50px;
   padding-top: 15px;
   padding-left: 16px;
@@ -1951,6 +1977,19 @@ footer {
   background-color: inherit;
   border-color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .input-footer {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-footer {
+    width: 358px;
+    margin-right: 0;
+  }
 }
 
 .button-footer {
