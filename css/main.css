@@ -1819,9 +1819,15 @@ footer {
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
+.logo {
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 768px) {
   .logo {
-    font-size: 24px;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -1848,6 +1854,10 @@ footer {
   }
 }
 
+.footer-address {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-address {
     padding-left: 61px;
@@ -1857,6 +1867,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer-address {
     margin-right: 54px;
+    text-align: left;
   }
 }
 
@@ -1900,6 +1911,7 @@ footer {
 }
 
 .action {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1913,6 +1925,9 @@ footer {
   display: flex;
   margin-right: 10px;
   margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-link-reverce:last-child {
@@ -1923,6 +1938,10 @@ footer {
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
   margin-left: 0px;
+}
+
+.footer-action {
+  display: inline-block;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1941,12 +1960,12 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 12px;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .form-footer {
+    margin-right: 12px;
     margin-bottom: 0;
   }
 }
@@ -1960,11 +1979,6 @@ footer {
 @media screen and (max-width: 1199px) {
   .mailing {
     margin-top: 60px;
-  }
-  .mailing .footer-action {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1992,6 +2006,9 @@ footer {
 }
 
 .button-footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   background-color: #2196f3;
   font-family: inherit;
@@ -2041,10 +2058,17 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-title {
@@ -2065,6 +2089,21 @@ textarea {
 
 .decoration {
   text-decoration: underline;
+}
+
+.link-decoration {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-decoration {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .close {
