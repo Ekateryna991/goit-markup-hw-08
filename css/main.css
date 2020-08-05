@@ -1943,6 +1943,12 @@ footer {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .action {
+    text-align: left;
+  }
+}
+
 .link-ikon {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1969,7 +1975,14 @@ footer {
 }
 
 .footer-action {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1998,8 +2011,9 @@ footer {
   }
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .mailing {
+    width: 450px;
     margin-left: 166px;
   }
 }

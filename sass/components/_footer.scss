@@ -83,6 +83,10 @@ footer {
 .action {
   text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .link-ikon {
@@ -107,7 +111,10 @@ footer {
 }
 
 .footer-action {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @media screen and(min-width:1200px) {
     display: flex;
   }
@@ -127,23 +134,15 @@ footer {
 }
 
 .mailing {
-  // display: inline-block;
-  // margin-left: 166px;
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
     margin-left: 166px;
   }
-
-  // @media screen and (min-width: 1200) {
-  // margin-left: -166px;
-  // }
 }
 
 @media screen and (max-width: 1199px) {
   .mailing {
     margin-top: 60px;
-    // .footer-action {
-    // align-items: center;
-    // }
   }
 }
 
